@@ -26,7 +26,7 @@ app.use("/api/posts", postRoute);
 
 app.get("/", (req, res) => {
 	res.send(
-		"Use an ultra secure backend authentication service with token for extra security in any part of your application.  DOCUMENTATION: Register User: /api/user/register, Login: /api/user/login, Private Route based on token: /api/posts"
+		"make use of this ultra secure backend authentication service with token for extra security in any part of your application.  DOCUMENTATION: Register User: /api/user/register, Login: /api/user/login, Private Route based on token: /api/posts"
 	);
 });
 
