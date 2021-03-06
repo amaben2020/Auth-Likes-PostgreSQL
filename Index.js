@@ -25,7 +25,9 @@ app.use("/api/user", authRoute);
 app.use("/api/posts", postRoute);
 
 app.get("/", (req, res) => {
-	res.send("Use an ultra secure backend authentication service");
+	res.send(
+		"Use an ultra secure backend authentication service with token for extra security in any part of your application.  DOCUMENTATION: Register User: /api/user/register, Login: /api/user/login, Private Route based on token: /api/posts"
+	);
 });
 
 app.listen(process.env.PORT || 7000, () => {
