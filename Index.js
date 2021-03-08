@@ -29,7 +29,8 @@ app.get("/", (req, res) => {
 		"make use of this ultra secure backend authentication service with token for extra security in any part of your application.  DOCUMENTATION: Register User: /api/user/register, Login: /api/user/login, Private Route based on token: /api/posts"
 	);
 });
+const PORT = process.env;
 
-app.listen(process.env.PORT || 7000, () => {
+app.listen(PORT || 7000, () => {
 	console.log(`server is running excellently well `);
 });
